@@ -1,0 +1,3 @@
+UkrsibBank,123456,7899
+OschadBank,5754767,755667
+PrivatBank,6658,876868768
