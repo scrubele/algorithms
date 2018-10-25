@@ -27,24 +27,24 @@ def add_value(graph, x, y):
     return graph
 
 
-def odd(st, parity):
-    if st % 2 == 1:
+def odd(vertex, parity):
+    if vertex % 2 == 1:
         parity[0] += 1
     else:
         parity[1] += 1
     return parity
 
 
-def dfs(graph, st, parity):
-    print(st, end=" ")
-    parity = odd(st, parity)
+def dfs(graph, start_vertex, parity):
+    print(start_vertex, end=" ")
+    parity = odd(start_vertex, parity)
 
     try:
-        vertexes.remove(st)
+        vertexes.remove(start_vertex)
     except:
         pass
 
-    for vertex in graph[st]:
+    for vertex in graph[start_vertex]:
         if vertex in vertexes:
             dfs(graph, vertex, parity)
 

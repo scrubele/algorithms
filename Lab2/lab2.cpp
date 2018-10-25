@@ -54,5 +54,5 @@ int main()
         count++;
         ++it;
     }
-    cout<<sum;
+    cout<<sum<<endl;
 }
