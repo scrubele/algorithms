@@ -7,7 +7,9 @@ def read_from_file():
     graph = {}
 
     n = data.__len__()
-    for i in range(1, n):
+    print(data)
+    for i in range(0, n):
+        print(data[i])
         nums = [int(n) for n in data[i].split()]
         graph = add_value(graph, nums[0], nums[1])
         graph = add_value(graph, nums[1], nums[0])
