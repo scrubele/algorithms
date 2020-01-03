@@ -2,10 +2,12 @@
 #include <fstream>
 #include <list>
 using namespace std;
+
 bool compare (const int& first, const int& second)
 {
     return first>second;
 }
+
 int main()
 {
     ifstream inputFile;
